@@ -6,7 +6,7 @@ image: pkphung2001/demo_vps
 
 # Deploy to these servers.
 servers:
-  - 192.168.1.10
+  - 157.245.56.106
 
 # Credentials for your image host.
 registry:
@@ -25,8 +25,9 @@ env:
     - RAILS_MASTER_KEY
 
 # Use a different ssh user than root
-# ssh:
-#   user: app
+ssh:
+  user: ubuntu
+  proxy_command: ssh -i skyler-hp.pem ubuntu@54.255.228.192
 
 # Configure builder setup.
 # builder:

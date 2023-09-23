@@ -6,7 +6,7 @@ image: pkphung2001/demo_vps
 
 # Deploy to these servers.
 servers:
-  - 146.190.85.5
+  - 192.168.1.10
 
 # Credentials for your image host.
 registry:

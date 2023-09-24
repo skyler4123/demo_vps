@@ -6,7 +6,7 @@ image: pkphung2001/demo_vps
 
 # Deploy to these servers.
 servers:
-  - 54.255.228.192
+  - 52.221.209.74
 
 # Credentials for your image host.
 registry:
@@ -27,7 +27,9 @@ env:
 # Use a different ssh user than root
 ssh:
   user: ubuntu
-  proxy_command: ssh -i skyler-hp.pem ubuntu@54.255.228.192
+  # proxy: "www@54.255.228.192"
+  # proxy_command: "ssh ubuntu@52.221.209.74"
+  # proxy_command: aws ssm start-session --target %h --document-name AWS-StartSSHSession --parameters 'portNumber=%p' --region=us-east-1 ## ssh via aws ssm
 
 # Configure builder setup.
 # builder:
